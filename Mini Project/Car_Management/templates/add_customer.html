@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Add New Customer</h3>
+<form action="/add_customer" method="POST" class="w-50 mx-auto">
+  <div class="mb-3">
+    <label>Name</label>
+    <input type="text" name="name" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label>Email</label>
+    <input type="email" name="email" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label>Phone</label>
+    <input type="text" name="phone" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label>Address</label>
+    <textarea name="address" class="form-control"></textarea>
+  </div>
+  <button type="submit" class="btn btn-success">Save</button>
+</form>
+{% endblock %}

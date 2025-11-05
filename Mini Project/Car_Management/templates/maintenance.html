@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Maintenance Records</h3>
+
+<a href="/add_maintenance" class="btn btn-primary mb-3">+ Add Maintenance</a>
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    {% for category, message in messages %}
+      <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+
+<table class="table table-striped table-hover">
+  <thead class="table-dark">
+    <tr>
+      <th>ID</th>
+      <th>Car ID</th>
+      <th>Date</th>
+      <th>Details</th>
+      <th>Cost (₹)</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for m in maintenance %}
+    <tr>
+      <td>{{ m.maintenance_id }}</td>
+      <td>{{ m.car_id }}</td>
+      <td>{{ m.service_date }}</td>
+      <td>{{ m.details }}</td>
+      <td>{{ m.cost }}</td>
+      <td>
+        <a href="/edit_maintenance/{{ m.maintenance_id }}" class="btn btn-warning btn-sm">Edit</a>
+        <a href="/delete_maintenance/{{ m.maintenance_id }}" class="btn btn-danger btn-sm" onclick="return confirm('Delete this record?');">Delete</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

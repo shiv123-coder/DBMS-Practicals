@@ -1,0 +1,6 @@
+INDEX VERSION 1.134+D:\3rd Year\Database Management System\Lab\Assignment 14\.metadata\.plugins\org.eclipse.jdt.core
+3478754051.index
+24672634.index
+1865797976.index
+4020293589.index
+909016054.index

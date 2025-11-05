@@ -1,0 +1,11 @@
+package abc;
+
+public class MongoConnectTest {
+	public static void main (string[] args) {
+		MongoClient mongoClient = new mongoClient ('localhost',27017);
+		MongoDatabase db = mongoClient.getDatbase('test';
+		System.out.println("Connected to database "+ db.getName());
+		mongoClient.close();
+	}
+
+}

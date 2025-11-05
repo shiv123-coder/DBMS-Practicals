@@ -1,0 +1,91 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container text-center mt-5">
+  <!-- Hero Section -->
+  <div class="mb-5">
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/3202/3202926.png"
+      alt="Car Management"
+      width="160"
+      class="mb-3 opacity-75"
+    />
+    <h1 class="fw-bold text-primary">Welcome to Car Management System</h1>
+    <p class="text-muted fs-5">
+      Manage your cars, customers, bookings, and maintenance — all in one place
+      🚗💼
+    </p>
+  </div>
+
+  <!-- Dashboard Links -->
+  <div class="row justify-content-center g-4">
+    <div class="col-md-3">
+      <div class="card shadow-sm border-0 h-100 hover-shadow">
+        <div class="card-body">
+          <i class="bi bi-car-front-fill text-primary display-4"></i>
+          <h5 class="card-title mt-3">Cars</h5>
+          <p class="text-muted">View and manage available cars</p>
+          <a href="{{ url_for('cars') }}" class="btn btn-outline-primary"
+            >Go to Cars</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card shadow-sm border-0 h-100 hover-shadow">
+        <div class="card-body">
+          <i class="bi bi-people-fill text-success display-4"></i>
+          <h5 class="card-title mt-3">Customers</h5>
+          <p class="text-muted">View and manage customer records</p>
+          <a href="{{ url_for('customers') }}" class="btn btn-outline-success"
+            >Go to Customers</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card shadow-sm border-0 h-100 hover-shadow">
+        <div class="card-body">
+          <i class="bi bi-calendar-check-fill text-warning display-4"></i>
+          <h5 class="card-title mt-3">Bookings</h5>
+          <p class="text-muted">Track all current bookings</p>
+          <a href="{{ url_for('bookings') }}" class="btn btn-outline-warning"
+            >Go to Bookings</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card shadow-sm border-0 h-100 hover-shadow">
+        <div class="card-body">
+          <i class="bi bi-wrench-adjustable text-danger display-4"></i>
+          <h5 class="card-title mt-3">Maintenance</h5>
+          <p class="text-muted">Record and review car maintenance</p>
+          <a href="{{ url_for('maintenance') }}" class="btn btn-outline-danger"
+            >Go to Maintenance</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="mt-5">
+    <hr />
+    <p class="text-muted">
+      🚘 Smart. Simple. Efficient. <br />
+      © {{ 2025 }} Car Management System
+    </p>
+  </div>
+</div>
+
+<!-- Optional hover effect -->
+<style>
+  .hover-shadow:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15) !important;
+  }
+</style>
+{% endblock %}

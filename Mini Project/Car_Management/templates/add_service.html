@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h3>Add Service</h3>
+<form method="post">
+  <div class="mb-3">
+    <label class="form-label">Car</label>
+    <select class="form-select" name="car_id">
+      {% for car in cars %}
+        <option value="{{ car.id }}">{{ car.registration_number or car.model }} - {{ car.owner.name }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div class="mb-3"><label class="form-label">Service Date</label><input class="form-control" name="service_date" type="date"></div>
+  <div class="mb-3"><label class="form-label">Service Type</label><input class="form-control" name="service_type"></div>
+  <div class="mb-3"><label class="form-label">Cost</label><input class="form-control" name="service_cost" type="number"></div>
+  <div class="mb-3"><label class="form-label">Remarks</label><textarea class="form-control" name="remarks"></textarea></div>
+  <button class="btn btn-success">Save</button>
+</form>
+{% endblock %}
