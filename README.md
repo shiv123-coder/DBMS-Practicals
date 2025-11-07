@@ -24,25 +24,33 @@ Each practical demonstrates implementation of **SQL**, **PL/SQL**, and **NoSQL (
 | 1 | **Case Study & Conceptual Design**  
 Decide a real-time application case study and formulate a problem statement. Propose a conceptual design using ER tools (ERD Plus / ER Win).  
 Identify entities, relationships, attributes, keys, and normalize the relational model. | 1–5 |
+
 | 2 | **SQL Queries – DDL and DML**  
 a) Create SQL DDL objects (Table, View, Index, Sequence, Synonym, Constraints).  
 b) Execute at least 10 SQL DML queries on the application database. | 6–15 |
+
 | 3 | **SQL Queries – Joins, Subqueries, and Views**  
 Execute at least 10 SQL DML queries demonstrating various Joins, Subqueries, and Views. | 16–20 |
+
 | 4 | **Unnamed PL/SQL Block – Control Structures & Exception Handling**  
 Design a PL/SQL block for Library fine calculation.  
 Use Borrower and Fine tables; handle exceptions and update status after return. | 21–26 |
+
 | 5 | **PL/SQL Block – Area of Circle**  
 Write a PL/SQL block to calculate area of circle for radius values 5 to 9.  
 Store results in a table named `areas(radius, area)`. | 27–33 |
+
 | 6 | **Named PL/SQL Block – Stored Procedure and Function**  
 Create a stored procedure `proc_Grade` to categorize students based on marks.  
 Use tables `Stud_Marks(name, total_marks)` and `Result(roll, name, class)`. | 27–33 |
+
 | 7 | **Cursors – Implicit, Explicit, FOR Loop, Parameterized**  
 Write a parameterized cursor program that merges records from `N_RollCall` into `O_RollCall`, skipping duplicates. | 34–39 |
+
 | 8 | **Database Trigger – Row/Statement Level, Before/After**  
 Create triggers on `Library` table to track updates/deletions.  
 Log old records into `Library_Audit` table. | 40–44 |
+
 | 9 | **Database Connectivity – SQL**  
 Develop a front-end program (Java/Python/etc.) to connect to MySQL/Oracle database and perform add, delete, and edit operations. | 45–46 |
 
@@ -52,12 +60,16 @@ Develop a front-end program (Java/Python/etc.) to connect to MySQL/Oracle databa
 
 | 10 | **MongoDB CRUD Operations**  
 Design and execute MongoDB queries using CRUD operations and logical operators. | 47–48 |
+
 | 11 | **MongoDB Aggregation & Indexing**  
 Implement MongoDB aggregation and indexing operations with suitable examples. | 49–52 |
+
 | 12 | **MongoDB MapReduce Operations**  
 Execute MapReduce operations in MongoDB with example datasets. | 53–54 |
+
 | 13 | **Database Connectivity – MongoDB**  
 Develop a front-end program to connect MongoDB with a UI, implementing add, delete, and edit operations. | 55–56 |
+
 
 ---
 
