@@ -16,9 +16,6 @@ Each practical demonstrates implementation of **SQL**, **PL/SQL**, and **NoSQL (
 
 ## 📚 **Contents**
 
-| Sr. No. | Experiment Performed | Page No. |
-| :------: | :------------------ | :-------: |
-
 ### **GROUP A : SQL and PL/SQL**
 
 | 1 | **Case Study & Conceptual Design**  
